@@ -3,13 +3,14 @@ const path = require('path')
 
 module.exports = {
     home: (req, res) => {
-     res.sendFile(path.join(__dirname, './public/index.html'))
+        console.log(path.join(__dirname, '/public/index.html'))
+     res.sendFile(path.join(__dirname, '/public/index.html'))
     },
     styles: (req, res) => {
-        res.sendFile(path.join(__dirname, './public/index.css'))
+        res.sendFile(path.join(__dirname, '/public/index.css'))
     },
     script: (req, res) => {
-        res.sendFile(path.join(_dirname, './public/index.js'))
+        res.sendFile(path.join(__dirname, '/public/index.js'))
     }
 
 

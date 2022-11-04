@@ -1,6 +1,119 @@
 
-Testing Report
------------------------
+ +++++++++++++++++++++++++++++++++++
+-----------Testing Report-------------
+ +++++++++++++++++++++++++++++++++++
+____________________________________
 
 
-// Test  
+// Overview 1
+-------------------
+- The front end javascript needs to connect to the backend to perform the proper functions and react accordingly
+
+
+// Test Criteria
+-------------------
+    - all buttons function as intended
+    ex:
+        - Draw button creates 5 cards with images and stats
+        - Play again button deletes cards and allows you to use draw button again
+        - See All Bots button works as intended
+        - etc.
+
+
+
+
+
+// Exit Criteria
+-------------------
+- All tests must pass
+
+
+
+//Overview 2
+-------------------
+    
+    - Ensure that the server is connecting properly to front-end
+
+   
+
+//Test Criteria
+--------------------
+    - Ensure that the data base is being utilized and adding bots to front end
+    - Make sure that all bots are functional
+
+
+// Entry Criteria
+--------------------
+    - Test Criteria provided.
+    - Running Version provided
+    - Computer/modern browser available for Testing
+
+//Exit Criteria:
+--------------------
+    - All tests must pass
+
+
+
+
+// Overview 3
+------------------
+    - When bots interact the statistics and efffects must be accurate
+
+
+// Test Criteria
+------------------
+    - Ensure that the counter is working properly
+
+        ex: 
+            - If the player wins the counter increases the amount of wins
+            - If the player loses the counter increases the amount of losses
+            - counter resets when page is refreshed
+
+    - Ensure that the stats the math on the stats of the bots are correct when battling
+
+        ex: 
+            - If bot1 does X amount of damage to bot2, bot2's health decreases by that much
+
+
+
+// Entry Criteria
+------------------
+    - Test criteria provided.
+    - Running version provided
+    - Computer/modern browser available for testing
+
+
+// Exit Criteria
+-------------------
+    - All tests must pass
+
+
+
+
+
+
+Other Details:
+------------------
+
+    - Test on Mac and Windows 10 and 11
+    - Should run on all modern browsers (excludes IE)
+
+
+
+
+
+
+
+
+
+
+
+_________BUG REPORTS__________
+
+
+
+ 1. Whenever a player wins the counter does not increase the winner count instead the Loser count increases by 1
+
+ 2. The See All bots button does not function at all 
+
+ 3. the counter doesn't reset when the page is refreshed

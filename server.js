@@ -5,6 +5,19 @@ const {bots, playerRecord} = require('./data')
 const {shuffleArray} = require('./utils')
 const {home, styles, script} = require('./pageCtrl.js')
 app.use(express.json())
+require('dotenv').config()
+
+const { ROLLBAR_TOKEN } = process.env
+
+var Rollbar = require('rollbar')
+var rollbar = new Rollbar({
+  accessToken: ROLLBAR_TOKEN,
+  captureUncaught: true,
+  captureUnhandledRejections: true,
+})
+
+// record a generic message and send it to Rollbar
+rollbar.log('Hello world!')
 
 
 app.get('/api/robots', (req, res) => {
